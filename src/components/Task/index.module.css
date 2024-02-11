@@ -1,0 +1,46 @@
+.task {
+  height: 32px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 16px 300px 16px;
+  column-gap: 8px;
+}
+
+.task:not(:first-child) {
+  margin-top: 8px;
+}
+
+.task:last-child {
+  margin-bottom: 8px;
+}
+
+.task_checkBox {
+  width: 16px;
+  height: 16px;
+}
+
+.task_text_checked {
+  text-decoration: line-through !important;
+  color: gray;
+}
+
+.task_trashButton {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.input {
+  height: 28px;
+  padding-left: 10px;
+  outline: 0;
+  text-decoration: none;
+  border-width: 0 0 1px;
+  border-color: #8080804d;
+}
+
+.input:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 3px black;
+}
